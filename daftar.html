@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Laporan - LAPOR SINI</title>
+
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 🟡 MENU ATAS -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                📢 LAPOR SINI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">🏠 Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang.html">ℹ️ Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cara.html">📖 Cara Lapor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="daftar.html">📋 Daftar Laporan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profil.html">👤 Profil</a>
+                    </li>
+                    <li class="nav-item mt-1 mt-lg-0 ms-lg-2">
+                        <a class="nav-link btn btn-light text-primary fw-bold px-3" href="login.html">🔑 Masuk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🟡 BAGIAN UTAMA DAFTAR LAPORAN -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="judul-bagian text-center mb-4">DAFTAR LAPORAN WARGA</h2>
+
+            <!-- ✅ TOMBOL PILIHAN (SEPERTI PUNYA KAMU) -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-4 col-md-3 col-lg-2 mb-2">
+                    <div class="btn btn-outline-primary w-100 fs-6 filter-btn active" data-target="semuaLapor">
+                        📋 Semua Laporan
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 mb-2">
+                    <div class="btn btn-outline-primary w-100 fs-6 filter-btn" data-target="laporSekolah">
+                        🏫 Sekolah
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 mb-2">
+                    <div class="btn btn-outline-primary w-100 fs-6 filter-btn" data-target="laporMasyarakat">
+                        🏘️ Masyarakat
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ ISIAN YANG BERGANTI-GANTI -->
+            <div id="semuaLapor" class="bagian-lapor">
+                <h5 class="text-center text-primary mb-4">SEMUA LAPORAN YANG MASUK</h5>
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Kerusakan Papan Tulis Kelas X RPL 2</h5>
+                        <p class="text-muted mb-1">Dari: Siswa SMK NEGERI JAKARTA | 29 April 2026</p>
+                        <p>Papan tulis di ruang kelas sudah rusak dan sulit dipakai menulis.</p>
+                    </div>
+                </div>
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Sampah Berserakan Di Jalan RT 05</h5>
+                        <p class="text-muted mb-1">Dari: Warga Masyarakat | 28 April 2026</p>
+                        <p>Sampah menumpuk di tepi jalan sehingga menimbulkan bau tidak sedap.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="laporSekolah" class="bagian-lapor" style="display: none;">
+                <h5 class="text-center text-primary mb-4">LAPORAN LINGKUNGAN SEKOLAH</h5>
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Kerusakan Papan Tulis Kelas X RPL 2</h5>
+                        <p class="text-muted mb-1">Dari: Siswa SMK NEGERI JAKARTA | 29 April 2026</p>
+                        <p>Papan tulis di ruang kelas sudah rusak dan sulit dipakai menulis.</p>
+                    </div>
+                </div>
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Kebocoran Air Di Kamar Mandi</h5>
+                        <p class="text-muted mb-1">Dari: Siswa SMK NEGERI JAKARTA | 27 April 2026</p>
+                        <p>Pipa air di kamar mandi bocor sehingga air tergenang di lantai.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="laporMasyarakat" class="bagian-lapor" style="display: none;">
+                <h5 class="text-center text-primary mb-4">LAPORAN LINGKUNGAN MASYARAKAT</h5>
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Sampah Berserakan Di Jalan RT 05</h5>
+                        <p class="text-muted mb-1">Dari: Warga Masyarakat | 28 April 2026</p>
+                        <p>Sampah menumpuk di tepi jalan sehingga menimbulkan bau tidak sedap.</p>
+                    </div>
+                </div>
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Lampu Jalan Mati Total</h5>
+                        <p class="text-muted mb-1">Dari: Warga Masyarakat | 26 April 2026</p>
+                        <p>Lampu penerangan jalan sudah mati 3 hari, jalur menjadi gelap.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 🟡 KAKI HALAMAN -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+          <div class="row text-center text-md-start">
+            <div class="col-md-4 mb-3 mb-md-0">
+              <h5 class="fw-bold text-primary">📢 LAPOR SINI</h5>
+              <p class="text-muted small">
+                Wadah Pengaduan Masyarakat & Sekolah. Tempat menyampaikan keluhan, saran, dan informasi secara aman dan nyaman.
+              </p>
+            </div>
+  
+            <div class="col-md-4 mb-3 mb-md-0">
+              <h6 class="fw-bold mb-3">Navigasi Cepat</h6>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="text-muted text-decoration-none">🏠 Beranda</a></li>
+                <li><a href="tentang.html" class="text-muted text-decoration-none">ℹ️ Tentang</a></li>
+                <li><a href="cara.html" class="text-muted text-decoration-none">📖 Cara Lapor</a></li>
+                <li><a href="daftar.html" class="text-muted text-decoration-none">📋 Daftar Laporan</a></li>
+                <li><a href="profil.html" class="text-muted text-decoration-none">👤 Profil Saya</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-md-4">
+              <h6 class="fw-bold mb-3">Kontak Pembuat</h6>
+              <ul class="list-unstyled text-muted small">
+                <li class="mb-1">📍 Mojokerto, Indonesia</li>
+                <li class="mb-1">📞 +62 857-XXXX-XXXX</li>
+                <li class="mb-1">📧 lapor_sini@gmail.com</li>
+                <li>🏫 SMK NEGERI 2 KOTA MOJOKERTO | Kelas X RPL 2</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="border-secondary mt-4 mb-3" />
+          <p class="text-center text-muted small mb-0">
+            &copy; 2026 LAPOR SINI | Dibuat Oleh SISWA SMKN 2 KOTA MOJOKERTO - Semua Hak Dilindungi
+          </p>
+        </div>
+      </footer>
+
+    <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ✅ KODE PENGGANTIAN ISIAN (SAMA PERSIS SEPERTI PUNYA KAMU) -->
+    <script>
+        const tombolSaring = document.querySelectorAll(".filter-btn");
+        const daftarBagian = ["semuaLapor", "laporSekolah", "laporMasyarakat"];
+
+        tombolSaring.forEach(function(tombol) {
+            tombol.addEventListener("click", function() {
+                const sasaran = tombol.getAttribute("data-target");
+
+                // Menghapus Tanda Aktif
+                tombolSaring.forEach(function(t) {
+                    t.classList.remove("active", "bg-primary", "text-white");
+                });
+
+                // Memberi Tanda Aktif Pada Yang Diklik
+                tombol.classList.add("active", "bg-primary", "text-white");
+
+                // Menampilkan & Menyembunyikan Bagian
+                daftarBagian.forEach(function(kode) {
+                    const isi = document.getElementById(kode);
+                    if (kode === sasaran) {
+                        isi.style.display = "block";
+                    } else {
+                        isi.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
