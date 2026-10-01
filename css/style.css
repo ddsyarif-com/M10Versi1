@@ -1,0 +1,203 @@
+/* ====================================
+   GAYA UTAMA - LAPOR SINI
+==================================== */
+
+/* WARNA UTAMA */
+:root {
+    --biru-tua: #084298;
+    --biru-utama: #0B5ED7;
+    --biru-muda: #CFE2FF;
+    --hijau: #198754;
+    --merah: #DC3545;
+    --kuning: #FFC107;
+    --abu: #6C757D;
+    --hitam: #212529;
+}
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    line-height: 1.7;
+    background-color: #F8F9FA;
+    color: var(--hitam) !important; /* ✅ WARNA DASAR HITAM */
+}
+
+/* ============= MENU ATAS ============= */
+.navbar {
+    padding: 12px 0;
+    position: sticky !important;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-brand {
+    font-size: 1.4rem !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-weight: 500 !important;
+    padding: 8px 16px !important;
+}
+
+.nav-link:hover {
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 5px;
+}
+
+/* ============= BAGIAN UTAMA ============= */
+.bagian-utama {
+    background: linear-gradient(rgba(8, 66, 152, 0.85), rgba(25, 135, 84, 0.75)), 
+                url('https://picsum.photos/id/1039/1920/1080');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.tombol-utama {
+    padding: 14px 40px !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    border-radius: 50px !important;
+    background-color: var(--biru-utama) !important;
+    color: white !important;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.tombol-utama:hover {
+    transform: translateY(-3px);
+    background-color: var(--biru-tua) !important;
+}
+
+.tombol-profil {
+    padding: 14px 40px !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    border-radius: 50px !important;
+    background-color: white !important;
+    color: var(--biru-tua) !important;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.tombol-profil:hover {
+    transform: translateY(-3px);
+    background-color: var(--biru-muda) !important;
+}
+
+/* ============= BAGIAN KEUNGGULAN (YANG DIPERBAIKI) ============= */
+.bagian-keunggulan {
+    padding: 4rem 0;
+    background-color: #FFFFFF !important; /* LATAR PUTIH BERSIH */
+}
+
+.judul-bagian {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--biru-tua) !important; /* ✅ PASTIKAN WARNA BIRU */
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.judul-bagian::after {
+    content: '';
+    width: 120px;
+    height: 3px;
+    background-color: var(--biru-utama);
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.kotak-keunggulan {
+    background-color: #F8FAFC !important; /* ✅ LATAR ABU MUDA */
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    height: 100%;
+    transition: all 0.3s ease;
+    border: none !important;
+}
+
+.kotak-keunggulan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.ikon-besar {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.judul-kotak {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--biru-tua) !important; /* ✅ WARNA JUDUL BIRU */
+}
+
+.teks-biasa {
+    font-size: 0.9rem;
+    color: #475569 !important; /* ✅ WARNA ISI ABU TUA */
+}
+
+/* ============= HALAMAN TENTANG & LAINNYA ============= */
+.tentang-kotak {
+    background-color: #F8FAFC;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.tentang-kotak h4 {
+    color: var(--biru-utama);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* ============= KAKI HALAMAN ============= */
+.kaki {
+    background: linear-gradient(135deg, var(--biru-tua) 0%, #052c65 100%);
+    color: white !important;
+    padding: 2rem 0;
+    font-size: 0.95rem;
+}
+
+/* ============= BAGIAN CARA LAPOR ============= */
+.langkah-lapor .nomor-langkah {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: var(--biru-utama);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.langkah-lapor h5 {
+    color: var(--biru-tua);
+    margin-bottom: 0.3rem;
+}
+
+.langkah-lapor p {
+    margin-bottom: 0;
+}
